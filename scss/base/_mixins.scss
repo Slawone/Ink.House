@@ -1,0 +1,3 @@
+@mixin fluid-text($min: 16, $max: 48, $screen: 1920) {
+  font-size: clamp(#{$min}px, #{$max / $screen * 100}vw, #{$max}px);
+}
