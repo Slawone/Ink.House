@@ -532,7 +532,7 @@ body {
 .collection {
   padding-top: 70px;
   padding-bottom: 70px;
-  background: url("../../images/collection-bg.jpg") center/cover no-repeat;
+  background: url("../images/collection-bg.jpg") center/cover no-repeat;
 }
 @media (max-width: 576px) {
   .collection {
@@ -553,6 +553,7 @@ body {
 @media (max-width: 768px) {
   .collection__title {
     padding-left: 80px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 576px) {
@@ -564,7 +565,7 @@ body {
   content: "";
   width: 80px;
   height: 80px;
-  background: url("../../images/star.svg") center/cover no-repeat;
+  background: url("../images/star.svg") center/cover no-repeat;
   position: absolute;
   top: 50%;
   left: 0;
@@ -588,6 +589,18 @@ body {
   gap: 40px;
   margin-bottom: 60px;
 }
+@media (max-width: 768px) {
+  .collection__description {
+    margin-bottom: 20px;
+    gap: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .collection__description {
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+}
 .collection__copy {
   font-size: clamp(16px, 1.6216216216vw, 18px);
   color: #fff;
@@ -595,9 +608,33 @@ body {
 }
 .collection__link {
   font-size: clamp(16px, 1.6216216216vw, 18px);
+  transition: color 0.3s, background-color 0.3s;
+  display: inline-block;
   padding: 21px 60px;
   color: #2C2D35;
   background-color: #EEDB6D;
+}
+@media (hover: hover) {
+  .collection__link:hover:hover {
+    background-color: #FAEB97;
+  }
+  .collection__link:hover:active {
+    background-color: #D9B949;
+  }
+}
+@media (hover: none) {
+  .collection__link:active:hover {
+    background-color: #FAEB97;
+  }
+  .collection__link:active:active {
+    background-color: #D9B949;
+  }
+}
+@media (max-width: 576px) {
+  .collection__link {
+    display: block;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
