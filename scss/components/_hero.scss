@@ -1,0 +1,77 @@
+.hero {
+  @media (max-width: 576px) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: 576px) {
+
+  background-color: #E5E5E5;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__img {
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+
+  &__content {
+    flex-basis: 540px;
+  }
+
+  &__title {
+    @include fluid-text(30, 60, 1100);
+    line-height: 1.1;
+    margin-bottom: 20px;
+
+    .green-text {
+      color: $accent-color;
+    }
+
+     @media (max-width: 576px) {
+      margin-bottom: 10px;
+     }
+  }
+
+  &__description {
+    @include fluid-text(14, 18, 1100);
+    color: $text-color-secondary;
+    margin-bottom: 60px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__link {
+    @include fluid-text(18, 20, 1100);
+    color: $accent-color;
+    border: 1px solid $accent-color;
+    padding: 21px 60px;
+    @include transition-color;
+
+    @include hover {
+      &:hover {
+        color: $white-color;
+        background-color: $accent-color;
+      }
+
+      &:active {
+        opacity: 0.8;
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 18px 51px;
+    }
+
+    @media (max-width: 576px) {
+      padding: 14px 41px;
+    }
+  }
+}

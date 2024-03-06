@@ -17,7 +17,7 @@
 }
 
 @mixin transition-color {
-  transition: color .3s, background-color .3s;
+  transition: color 0.3s, background-color 0.3s;
 }
 
 @mixin abs-center {
@@ -30,4 +30,14 @@
 @mixin square($size) {
   width: $size;
   aspect-ratio: 1;
+}
+
+@mixin section-padding-y {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  @media (max-width: 576px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
