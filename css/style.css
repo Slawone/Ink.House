@@ -459,6 +459,7 @@ body {
   padding: 20px 20px 30px;
   max-width: 350px;
   height: 100%;
+  transition: scale 0.3s;
 }
 @media (max-width: 576px) {
   .card {
@@ -488,14 +489,43 @@ body {
 }
 .card__btn {
   font-size: clamp(18px, 1.8018018018vw, 20px);
+  transition: color 0.3s, background-color 0.3s;
   color: #598D66;
   border: 1px solid #598D66;
   padding: 21px 0;
   width: 100%;
 }
+@media (hover: hover) {
+  .card__btn:hover:hover {
+    color: #fff;
+    background-color: #376B44;
+  }
+  .card__btn:hover:active {
+    opacity: 0.8;
+  }
+}
+@media (hover: none) {
+  .card__btn:active:hover {
+    color: #fff;
+    background-color: #376B44;
+  }
+  .card__btn:active:active {
+    opacity: 0.8;
+  }
+}
 @media (max-width: 576px) {
   .card__btn {
     padding: 15px 0;
+  }
+}
+@media (min-width: 768px) and (hover: hover) {
+  .card:hover {
+    scale: 1.1;
+  }
+}
+@media (min-width: 768px) and (hover: none) {
+  .card:active {
+    scale: 1.1;
   }
 }
 
