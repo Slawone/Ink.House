@@ -45,7 +45,7 @@
 .burger-btn {
   display: none;
   &__icon {
-    font-size: 30px;
+    font-size: $icon-size;
     @include transition-color;
   }
 
@@ -59,7 +59,7 @@
 }
 .close-btn {
   &__icon {
-    font-size: 20px;
+    font-size: $icon-size;
   }
 
   @media (min-width: 576px) {
@@ -100,7 +100,7 @@
 }
 .basket-btn {
   &__icon {
-    font-size: 30px;
+    font-size: $icon-size;
     @include transition-color;
 
     @include hover {
@@ -112,5 +112,29 @@
         background-color: #d4e8d9;
       }
     }
+  }
+}
+
+.mobile-menu {
+  background-color: $components-background-color;
+  width: 100%;
+  max-height: 100%;
+
+  &.active {
+    display: block;
+    overflow: hidden;
+  }
+
+  &__nav {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-left: $container-padding-y;
+  }
+
+  &__link {
+    font-size: 18px;
+    color: $text-color-primary;
   }
 }

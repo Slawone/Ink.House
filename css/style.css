@@ -213,7 +213,7 @@ body {
 }
 
 .close-btn__icon {
-  font-size: 20px;
+  font-size: 30px;
 }
 @media (min-width: 576px) {
   .close-btn {
@@ -280,6 +280,27 @@ body {
   .basket-btn__icon:active:active {
     background-color: #d4e8d9;
   }
+}
+
+.mobile-menu {
+  background-color: #E1EDE6;
+  width: 100%;
+  max-height: 100%;
+}
+.mobile-menu.active {
+  display: block;
+  overflow: hidden;
+}
+.mobile-menu__nav {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-left: 15px;
+}
+.mobile-menu__link {
+  font-size: 18px;
+  color: #2C2D35;
 }
 
 /*# sourceMappingURL=style.css.map */
