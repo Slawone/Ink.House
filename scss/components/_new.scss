@@ -1,0 +1,76 @@
+.collection {
+  @include section-padding-y;
+
+  background: url("../../images/collection-bg.jpg") center / cover no-repeat;
+
+  &__inner {
+    max-width: 540px;
+  }
+
+  // .collection__title
+
+  &__title {
+    @include fluid-text(24, 40, 1110);
+
+    padding-left: 100px;
+    color: $white-color;
+    position: relative;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      padding-left: 80px;
+    }
+
+    @media (max-width: 576px) {
+      padding-left: 50px;
+    }
+
+    &::before {
+      content: "";
+      width: 80px;
+      height: 80px;
+      background: url("../../images/star.svg") center / cover no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+
+      @media (max-width: 768px) {
+        width: 60px;
+        height: 60px;
+      }
+
+      @media (max-width: 576px) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  // .collection__description
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  // .collection__copy
+
+  &__copy {
+    @include fluid-text(16, 18, 1110);
+    color: $white-color;
+    line-height: 1.5;
+  }
+
+  // .collection__link
+
+  &__link {
+    @include fluid-text(16, 18, 1110);
+
+    padding: 21px 60px;
+    color: $text-color-primary;
+    background-color: $yellow-color;
+  }
+}
