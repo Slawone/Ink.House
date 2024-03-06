@@ -45,7 +45,7 @@
 .burger-btn {
   display: none;
   &__icon {
-    font-size: 20px;
+    font-size: 30px;
     @include transition-color;
   }
 
@@ -100,7 +100,7 @@
 }
 .basket-btn {
   &__icon {
-    font-size: 20px;
+    font-size: 30px;
     @include transition-color;
 
     @include hover {
