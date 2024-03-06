@@ -1,0 +1,116 @@
+.header {
+  background-color: $components-background-color;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    @media (max-width: 768px) {
+      gap: 30px;
+    }
+
+    @media (max-width: 576px) {
+      width: 100%;
+      justify-content: space-between;
+      padding: 17px 0;
+    }
+  }
+}
+.logo {
+  padding: 33px 0;
+
+  @media (max-width: 576px) {
+    width: 100%;
+    text-align: center;
+    padding: 17px 0;
+    border-bottom: 1px solid $text-color-secondary;
+  }
+
+  &__image {
+    @include square(143);
+  }
+}
+.burger-btn {
+  display: none;
+  &__icon {
+    font-size: 20px;
+    @include transition-color;
+  }
+
+  @media (max-width: 576px) {
+    display: block;
+
+    .hidden {
+      display: none;
+    }
+  }
+}
+.close-btn {
+  &__icon {
+    font-size: 20px;
+  }
+
+  @media (min-width: 576px) {
+    display: none;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  @media (max-width: 768px) {
+    gap: 30px;
+  }
+
+  @media (max-width: 576px) {
+    display: none;
+  }
+
+  &__link {
+    @include fluid-text(16, 20, 1110);
+    color: $text-color-primary;
+    padding: 10px;
+    @include transition-color;
+
+    @include hover {
+      &:hover {
+        color: $components-main-color;
+      }
+
+      &:active {
+        color: $text-color-primary;
+        background-color: #d4e8d9;
+      }
+    }
+  }
+}
+.basket-btn {
+  &__icon {
+    font-size: 20px;
+    @include transition-color;
+
+    @include hover {
+      &:hover {
+        color: $components-main-color;
+      }
+
+      &:active {
+        background-color: #d4e8d9;
+      }
+    }
+  }
+}

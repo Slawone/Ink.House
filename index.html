@@ -8,47 +8,38 @@
     />
     <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.svg" />
     <title>Магазин реплик картин Ink. House</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <script type="module" src="js/main.js"></script>
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header__container container">
         <div class="logo">
           <a class="logo__link" href="/">
             <img class="logo__image" src="/images/logo.svg" alt="Logo" />
           </a>
         </div>
 
-        <button class="burger-btn">
-          <img
-            class="burger-btn__icon"
-            src="/images/icons/burger.svg"
-            alt="Burger"
-          />
-        </button>
+        <div class="header__inner">
+          <button class="burger-btn">
+            <i class="ri-menu-line burger-btn__icon"></i>
+          </button>
 
-        <button class="close-btn">
-          <img
-            class="close-btn__icon"
-            src="/images/icons/close.svg"
-            alt="Close"
-          />
-        </button>
+          <button class="close-btn visibility-hidden">
+            <i class="ri-close-large-line close-btn__icon"></i>
+          </button>
 
-        <nav class="nav">
-          <a class="nav__link" href="#!">Репродукции</a>
-          <a class="nav__link" href="#!">Новинки</a>
-          <a class="nav__link" href="#!">О нас</a>
-        </nav>
+          <nav class="nav">
+            <a class="nav__link" href="#!">Репродукции</a>
+            <a class="nav__link" href="#!">Новинки</a>
+            <a class="nav__link" href="#!">О нас</a>
+          </nav>
 
-        <button class="basket-btn">
-          <img
-            class="basket-btn__icon"
-            src="/images/icons/basket.svg"
-            alt="Basket"
-          />
-        </button>
+          <button class="basket-btn">
+            <i class="ri-shopping-cart-line basket-btn__icon"></i>
+          </button>
+        </div>
       </div>
     </header>
   </body>

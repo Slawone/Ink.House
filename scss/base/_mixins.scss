@@ -1,3 +1,33 @@
 @mixin fluid-text($min: 16, $max: 48, $screen: 1920) {
   font-size: clamp(#{$min}px, #{$max / $screen * 100}vw, #{$max}px);
 }
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      @content;
+    }
+  }
+}
+
+@mixin transition-color {
+  transition: color .3s, background-color .3s;
+}
+
+@mixin abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+@mixin square($size) {
+  width: $size;
+  aspect-ratio: 1;
+}
