@@ -637,4 +637,57 @@ body {
   }
 }
 
+.about {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+@media (max-width: 576px) {
+  .about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .about__container {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.about__img img {
+  display: block;
+}
+.about__content {
+  flex-basis: 635px;
+}
+@media (max-width: 768px) {
+  .about__content {
+    flex-basis: auto;
+  }
+}
+.about__title {
+  font-size: clamp(24px, 3.6036036036vw, 40px);
+  margin-bottom: 20px;
+}
+.about__description {
+  font-size: clamp(16px, 1.6216216216vw, 18px);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.about__team {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 576px) {
+  .about__team {
+    gap: 20px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
