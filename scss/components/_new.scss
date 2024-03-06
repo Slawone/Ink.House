@@ -1,7 +1,7 @@
 .collection {
   @include section-padding-y;
 
-  background: url("../../images/collection-bg.jpg") center / cover no-repeat;
+  background: url("../images/collection-bg.jpg") center / cover no-repeat;
 
   &__inner {
     max-width: 540px;
@@ -29,7 +29,7 @@
       content: "";
       width: 80px;
       height: 80px;
-      background: url("../../images/star.svg") center / cover no-repeat;
+      background: url("../images/star.svg") center / cover no-repeat;
       position: absolute;
       top: 50%;
       left: 0;
