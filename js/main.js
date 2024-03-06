@@ -1,3 +1,4 @@
+// mobile-menu
 const burgerButton = document.querySelector(".burger-btn");
 const closeButton = document.querySelector(".close-btn");
 const mobileMenu = document.querySelector(".mobile-menu");
@@ -26,5 +27,27 @@ closeButton.addEventListener("click", () => {
 mobileMenuLink.forEach((link) => {
   link.addEventListener("click", () => {
     closeNav();
+  });
+});
+
+// product-lists
+const countryButtons = document.querySelectorAll(".product__country-item");
+const productLists = document.querySelectorAll(".product__list");
+
+countryButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    const countryButtonsTarget = e.target.getAttribute("data-btn");
+
+    countryButtons.forEach((item) =>
+      item.classList.remove("product__country-item--active")
+    );
+
+    productLists.forEach((item) => item.classList.add("visibility-hidden"));
+
+    button.classList.add("product__country-item--active");
+
+    document
+      .getElementById(countryButtonsTarget)
+      .classList.remove("visibility-hidden");
   });
 });

@@ -388,4 +388,115 @@ body {
   }
 }
 
+.product {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+@media (max-width: 576px) {
+  .product {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.product__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .product__inner {
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+}
+.product__title {
+  font-size: clamp(24px, 3.6036036036vw, 40px);
+}
+.product__country-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+@media (max-width: 420px) {
+  .product__country-list {
+    width: 100%;
+    overflow-x: scroll;
+  }
+}
+.product__country-item {
+  font-size: clamp(18px, 1.8018018018vw, 20px);
+  transition: color 0.3s, background-color 0.3s;
+  padding: 10px 20px;
+  background-color: #E1EDE6;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.product__country-item--active {
+  background-color: #376B44;
+  color: #fff;
+}
+.product__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .product__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .product__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background-color: #E1EDE6;
+  padding: 20px 20px 30px;
+  max-width: 350px;
+  height: 100%;
+}
+@media (max-width: 576px) {
+  .card {
+    margin-inline: auto;
+  }
+}
+.card__img {
+  margin-bottom: 20px;
+}
+.card__writer {
+  font-size: clamp(16px, 1.6216216216vw, 18px);
+  color: #86928B;
+  margin-bottom: 10px;
+}
+.card__name {
+  font-size: clamp(24px, 2.7027027027vw, 30px);
+  margin-bottom: 10px;
+}
+.card__description {
+  font-size: clamp(16px, 1.6216216216vw, 18px);
+  margin-bottom: 30px;
+}
+.card__price {
+  font-size: clamp(20px, 2.1621621622vw, 24px);
+  color: #598D66;
+  margin-bottom: 20px;
+}
+.card__btn {
+  font-size: clamp(18px, 1.8018018018vw, 20px);
+  color: #598D66;
+  border: 1px solid #598D66;
+  padding: 21px 0;
+  width: 100%;
+}
+@media (max-width: 576px) {
+  .card__btn {
+    padding: 15px 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

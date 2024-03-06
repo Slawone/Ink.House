@@ -2,13 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta
+    <!-- <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi"
-    />
+    /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.svg" />
     <title>Магазин реплик картин Ink. House</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link href="css/style.css" rel="stylesheet" />
     <script type="module" src="js/main.js"></script>
   </head>
@@ -31,7 +35,7 @@
           </button>
 
           <nav class="nav">
-            <a class="nav__link" href="#reproductions">Репродукции</a>
+            <a class="nav__link" href="#product">Репродукции</a>
             <a class="nav__link" href="#new">Новинки</a>
             <a class="nav__link" href="#about">О нас</a>
           </nav>
@@ -44,7 +48,7 @@
 
       <dialog class="mobile-menu">
         <nav class="mobile-menu__nav">
-          <a class="mobile-menu__link" href="#reproductions">Репродукции</a>
+          <a class="mobile-menu__link" href="#product">Репродукции</a>
           <a class="mobile-menu__link" href="#!">Новинки</a>
           <a class="mobile-menu__link" href="#!">О нас</a>
         </nav>
@@ -55,24 +59,402 @@
       <section class="hero">
         <div class="hero__container container">
           <div class="hero__img">
-            <img src="./images/hero.jpg" alt="">
+            <img src="./images/hero.jpg" alt="" />
           </div>
 
           <div class="hero__content">
-            <h1 class="hero__title">Реплики картин <br> от <span class="green-text">Ink. House</span></h1>
-            <p class="hero__description">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
-             <a class="hero__link" href="#reproductions">Продукция</a>
+            <h1 class="hero__title">
+              Реплики картин <br />
+              от <span class="green-text">Ink. House</span>
+            </h1>
+            <p class="hero__description">
+              Высокое качество отрисовки на плотной бумаге или льняном холсте.
+              Редкие произведения, доступные цены.
+            </p>
+            <a class="hero__link" href="#reproductions">Продукция</a>
           </div>
         </div>
       </section>
 
-      <section class="reproductions" id="reproductions">
+      <section class="product" id="product">
         <div class="container">
-          <div class="reproductions__inner">
-            <h2 class="reproductions__title"></h2>
+          <div class="product__inner">
+            <h2 class="product__title">Репродукции</h2>
+
+            <ul class="product__country-list">
+              <li class="product__country-item product__country-item--active" data-btn="france-list">Франция</li>
+              <li class="product__country-item" data-btn="germany-list">Германия</li>
+              <li class="product__country-item" data-btn="england-list">Англия</li>
+            </ul>
           </div>
+
+          <ul class="product__list" id="france-list">
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/france/painting-01.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Марсель Руссо</p>
+
+                <h4 class="card__name">Охота Амура</h4>
+
+                <p class="card__description">Холст, масло (50х80)</p>
+
+                <div class="card__price">14 500 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/france/painting-02.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Анри Селин</p>
+
+                <h4 class="card__name">Дама с собачкой</h4>
+
+                <p class="card__description">Акрил, бумага (50х80)</p>
+
+                <div class="card__price">16 500 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/france/painting-03.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Франсуа Дюпон</p>
+
+                <h4 class="card__name">Процедура</h4>
+
+                <p class="card__description">Цветная литография (40х60)</p>
+
+                <div class="card__price">20 000 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/france/painting-04.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Луи Детуш</p>
+
+                <h4 class="card__name">Роза</h4>
+
+                <p class="card__description">Бумага, акрил (50х80)</p>
+
+                <div class="card__price">12 000 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/france/painting-05.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Франсуа Дюпон</p>
+
+                <h4 class="card__name">Птичья трапеза</h4>
+
+                <p class="card__description">Цветная литография (40х60)</p>
+
+                <div class="card__price">22 500 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/france/painting-06.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Пьер Моранж</p>
+
+                <h4 class="card__name">Пейзаж с рыбой</h4>
+
+                <p class="card__description">Цветная литография (40х60)</p>
+
+                <div class="card__price">20 000 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+          </ul>
+
+          <ul class="product__list visibility-hidden" id="germany-list">
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/germany/painting-07.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Курт Вернер</p>
+
+                <h4 class="card__name">Над городом</h4>
+
+                <p class="card__description">Цветная литография (40х60)</p>
+
+                <div class="card__price">16 000 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/germany/painting-08.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Макс Рихтер</p>
+
+                <h4 class="card__name">Птенцы</h4>
+
+                <p class="card__description">Холст, масло (50х80)</p>
+
+                <div class="card__price">14 500 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/germany/painting-09.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Мартин Майер</p>
+
+                <h4 class="card__name">Среди листьев</h4>
+
+                <p class="card__description">Цветная литография (40х60)</p>
+
+                <div class="card__price">20 000 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/germany/painting-10.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Герман Беккер</p>
+
+                <h4 class="card__name">Яркая птица</h4>
+
+                <p class="card__description">Цветная литография (40х60)</p>
+
+                <div class="card__price">13 000 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/germany/painting-11.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Вульф Бауэр</p>
+
+                <h4 class="card__name">Дятлы</h4>
+
+                <p class="card__description">Бумага, акрил (50х80) </p>
+
+                <div class="card__price">20 000 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/germany/painting-12.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Вальтер Хартманн</p>
+
+                <h4 class="card__name">Большие воды</h4>
+
+                <p class="card__description">Бумага, акрил (50х80)</p>
+
+                <div class="card__price">23 000 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+          </ul>
+
+          <ul class="product__list visibility-hidden" id="england-list">
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/england/painting-13.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Пол Смит</p>
+
+                <h4 class="card__name">Дикий зверь</h4>
+
+                <p class="card__description">Акварель, бумага (50х80)</p>
+
+                <div class="card__price">19 500 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/england/painting-14.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Джон Уайт</p>
+
+                <h4 class="card__name">Скалистый берег</h4>
+
+                <p class="card__description">Цветная литография (40х60)</p>
+
+                <div class="card__price">17 500 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/england/painting-15.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Джим Уотсон</p>
+
+                <h4 class="card__name">Река и горы</h4>
+
+                <p class="card__description">Акварель, бумага (50х80)</p>
+
+                <div class="card__price">20 500 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/england/painting-16.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Юджин Зиллион</p>
+
+                <h4 class="card__name">Белый попугай</h4>
+
+                <p class="card__description">Цветная литография (40х60)</p>
+
+                <div class="card__price">15 500 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/england/painting-17.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Эрик Гиллман</p>
+
+                <h4 class="card__name">Ночная рыба</h4>
+
+                <p class="card__description">Бумага, акрил (50х80) </p>
+
+                <div class="card__price">12 500 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+
+            <li class="product__item">
+              <article class="card">
+                <img
+                  class="card__img"
+                  src="./images/paintings/england/painting-18.jpg"
+                  alt=""
+                />
+
+                <p class="card__writer">Альфред Барр</p>
+
+                <h4 class="card__name">Рыжий кот</h4>
+
+                <p class="card__description">Цветная литография (40х60)</p>
+
+                <div class="card__price">21 000 руб</div>
+
+                <button class="card__btn">В корзину</button>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
   </body>
-  </html>
+</html>
