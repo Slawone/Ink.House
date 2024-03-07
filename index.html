@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi"
     /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.svg" />
     <title>Магазин реплик картин Ink. House</title>
     <link
@@ -17,7 +17,7 @@
     <script type="module" src="js/main.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__container container">
         <div class="logo">
           <a class="logo__link" href="./">
@@ -82,9 +82,18 @@
             <h2 class="product__title">Репродукции</h2>
 
             <ul class="product__country-list">
-              <li class="product__country-item product__country-item--active" data-btn="france-list">Франция</li>
-              <li class="product__country-item" data-btn="germany-list">Германия</li>
-              <li class="product__country-item" data-btn="england-list">Англия</li>
+              <li
+                class="product__country-item product__country-item--active"
+                data-btn="france-list"
+              >
+                Франция
+              </li>
+              <li class="product__country-item" data-btn="germany-list">
+                Германия
+              </li>
+              <li class="product__country-item" data-btn="england-list">
+                Англия
+              </li>
             </ul>
           </div>
 
@@ -303,7 +312,7 @@
 
                 <h4 class="card__name">Дятлы</h4>
 
-                <p class="card__description">Бумага, акрил (50х80) </p>
+                <p class="card__description">Бумага, акрил (50х80)</p>
 
                 <div class="card__price">20 000 руб</div>
 
@@ -425,7 +434,7 @@
 
                 <h4 class="card__name">Ночная рыба</h4>
 
-                <p class="card__description">Бумага, акрил (50х80) </p>
+                <p class="card__description">Бумага, акрил (50х80)</p>
 
                 <div class="card__price">12 500 руб</div>
 
@@ -459,15 +468,22 @@
       <section class="collection" id="collection">
         <div class="container">
           <div class="collection__inner">
-            <h2 class="collection__title">Новая коллекция <br>французских авторов</h2>
+            <h2 class="collection__title">
+              Новая коллекция <br />французских авторов
+            </h2>
 
             <div class="collection__description">
               <p class="collection__copy">
-                Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений.
+                Сложно сказать, почему акционеры крупнейших компаний призывают
+                нас к новым свершениям, которые, в свою очередь, должны быть
+                заблокированы в рамках своих собственных рациональных
+                ограничений.
               </p>
 
               <p class="collection__copy">
-                Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений прогрессивного развития.
+                Принимая во внимание показатели успешности, граница обучения
+                кадров предопределяет высокую востребованность направлений
+                прогрессивного развития.
               </p>
             </div>
 
@@ -479,24 +495,85 @@
       <section class="about" id="about">
         <div class="about__container container">
           <div class="about__img">
-            <img src="./images/frame-with-hand.png" alt="">
+            <img src="./images/frame-with-hand.png" alt="" />
           </div>
 
           <div class="about__content">
             <h2 class="about__title">Наша команда</h2>
 
             <p class="about__description">
-              Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.
+              Значимость этих проблем настолько очевидна, что базовый вектор
+              развития позволяет оценить значение экспериментов, поражающих
+              по своей масштабности и грандиозности. Мы вынуждены отталкиваться
+              от того, что консультация с широким активом.
             </p>
 
             <div class="about__team">
-              <img src="./images/avatars/avatar-1.jpg" alt="">
-              <img src="./images/avatars/avatar-2.jpg" alt="">
-              <img src="./images/avatars/avatar-3.jpg" alt="">
+              <img src="./images/avatars/avatar-1.jpg" alt="" />
+              <img src="./images/avatars/avatar-2.jpg" alt="" />
+              <img src="./images/avatars/avatar-3.jpg" alt="" />
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__logo logo">
+          <a class="logo__link" href="./">
+            <img class="logo__image" src="./images/logo.svg" alt="Logo" />
+          </a>
+        </div>
+
+        <div class="footer__info">
+          <div class="footer__phone">+7 (999) 543-54-54</div>
+          <div class="footer__name">Мастерская</div>
+        </div>
+
+        <div class="footer__column footer__column--reproduction">
+          <h3 class="footer__title">Репродукции</h3>
+
+          <ul class="footer__list">
+            <li class="footer__item">Франция</li>
+            <li class="footer__item">Германия</li>
+            <li class="footer__item">Англия</li>
+          </ul>
+        </div>
+
+        <div class="footer__column footer__column--latest">
+          <h3 class="footer__title">Новинки</h3>
+
+          <ul class="footer__list">
+            <li class="footer__item">2021</li>
+            <li class="footer__item">2020</li>
+          </ul>
+        </div>
+
+        <div class="footer__column footer__column--about">
+          <h3 class="footer__title">О нас</h3>
+
+          <ul class="footer__list">
+            <li class="footer__item">Художники</li>
+            <li class="footer__item">Менеджеры</li>
+          </ul>
+        </div>
+
+        <div class="footer__networks">
+          <div class="footer__social">
+            <i class="ri-facebook-box-fill footer__social-icon"></i>
+            <i class="ri-instagram-fill footer__social-icon"></i>
+            <i class="ri-youtube-fill footer__social-icon"></i>
+          </div>
+
+          <div class="footer__copyright">
+            <span>Ink. House ®</span>
+            <span>All rights reserved</span>
+          </div>
+        </div>
+
+        <a class="footer__link-up" href="#header">Наверх</a>
+      </div>
+    </footer>
   </body>
 </html>
